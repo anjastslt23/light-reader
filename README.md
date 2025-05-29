@@ -1,50 +1,68 @@
-# Welcome to your Expo app 👋
+# Dark Apps
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, privacy-focused web reader built with [Expo](https://expo.dev) and React Native. This app is designed for reading web content with advanced ad blocking, persistent custom root URL, and a beautiful dark/light UI.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
+- **Customizable Root URL**: Set and persist your preferred website as the main reader.
+- **Advanced AdBlock**: Blocks popups, floating ads, and external app/browser redirects.
+- **Dark & Light Mode**: Follows system theme or manual selection.
+- **Data Compression**: Optional mode to reduce data usage.
+- **Persistent Settings**: All preferences saved with AsyncStorage.
+- **Modern UI**: Responsive, touch-friendly, and beautiful.
+
+---
+
+## 📱 Getting Started
+
+1. **Install dependencies**
    ```bash
    npm install
    ```
-
-2. Start the app
-
+2. **Start the app**
    ```bash
    npx expo start
    ```
+3. **Open on device/emulator**
+   - Scan QR code with Expo Go (Android/iOS)
+   - Or use Android/iOS simulator
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## ⚙️ Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- `app/` — Source code (screens, navigation)
+- `components/` — UI components
+- `contexts/` — Context providers (Theme, AdBlock, URL, etc)
+- `utils/adblockScript.ts` — Advanced adblock logic for WebView
+- `assets/` — Images and fonts
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🛡️ Permissions
 
-```bash
-npm run reset-project
-```
+- **Internet**: Required for WebView browsing.
+- No unnecessary permissions requested.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 📝 Scripts
 
-To learn more about developing your project with Expo, look at the following resources:
+- `npm run reset-project` — Reset to a blank starter
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 📚 Learn More
 
-Join our community of developers creating universal apps.
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native WebView](https://github.com/react-native-webview/react-native-webview)
+- [Expo Router](https://expo.github.io/router/docs)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 👤 Author & License
+
+- Developed by SLT Developer
+- MIT License
